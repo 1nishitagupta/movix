@@ -40,7 +40,7 @@ function App() {
         <Route path="/explore/:id" element={<Explore />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
