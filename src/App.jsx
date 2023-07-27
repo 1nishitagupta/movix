@@ -5,12 +5,6 @@ import { getApiConfiguration, getGenres } from "./store/homeSlice";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import HomePage from "./pages/home/Home";
-// import Details from "@/components/details";
-// import Details from "./pages/details/Details";
-// import SearchResult from "./pages/searchResult/SearchResult";
-// import Explore from "./pages/explore/Explore";
-// import Explore from "pages/explore/Explore";
-
 import { Route, Routes } from "react-router-dom";
 import PageNotFound from "./pages/404/PageNotFound";
 import Explore from "./pages/explore/Explore";
@@ -63,8 +57,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/:mediaType/:id" element={<Details />} />
-        <Route path="/search/:id" element={<SearchResult />} />
-        <Route path="/explore/:id" element={<Explore />} />
+        <Route path="/search/:query" element={<SearchResult />} />
+        <Route path="/explore/:mediaType" element={<Explore />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

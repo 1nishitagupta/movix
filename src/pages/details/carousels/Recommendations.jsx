@@ -8,7 +8,7 @@ const Recommendation = ({ mediaType, id }) => {
     `/${mediaType}/${id}/recommendations`
   );
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <>
